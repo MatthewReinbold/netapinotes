@@ -3,7 +3,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -21,7 +21,7 @@
 	}
 
 	ol, ul {
-		list-style: none;
+		/*list-style: none;*/
 	}
 
 	blockquote, q {
@@ -527,10 +527,9 @@
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			width: 50%;
 			display: block;
 			background: #FFF;
-			padding: 16em 0 0 0;
+			padding: 1em 0 0 0;
 			text-align: left;
 			position: relative;
 		}
@@ -538,7 +537,16 @@
 		.post .signup input {
 			width: 90%;
 		}
-
+		/*
+		*/
+		.post .signup ol, .post .signup ul {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;			
+		}
 		.post .content {
 			-moz-transition: background 0.2s ease-in-out;
 			-webkit-transition: background 0.2s ease-in-out;
@@ -548,19 +556,16 @@
 			-webkit-order: 1;
 			-ms-order: 1;
 			order: 1;
-			width: 50%;
+			width: 60%;
 			display: block;
 			background: #FFF;
 			padding: 2em 8em 0em 8em;
-			text-align: right;
 			position: relative;
 		}
 
 			.post .content:before {
 				content: '';
 				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
 				margin-right: -0.25em;
 			/* Adjusts for spacing */
 		}
@@ -621,9 +626,9 @@
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			width: 50%;
+			width: 40%;
 			display: block;
-			margin: 0;
+			margin: 0 2em 0 0 ;
 			position: relative;
 			overflow: hidden;
 			background-color: #ffffff;
@@ -640,6 +645,10 @@
 				width: auto;
 				display: none;
 			}
+
+		.promo {
+			margin-top:1em;
+		}	
 
 		.post.alt .content {
 			-ms-flex-order: 2;
@@ -889,3 +898,4 @@
 				.post.style1.invert .image {
 					background-color: #1abc9c;
 				}
+
